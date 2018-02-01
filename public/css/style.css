@@ -1,0 +1,322 @@
+body,
+div,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.clear-fix {
+  overflow: auto;
+}
+
+h1 {
+  font-size: 40px;
+  color: #192F43;
+  line-height: 1.07143;
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #192F43;
+  line-height: 1.07143;
+  padding: 10px;
+  text-align: center;
+}
+
+h3 {
+  font-style: italic;
+  font-size: 20px;
+  color: #192F43;
+  line-height: 1.07143;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 14px;
+  color: #4a4a4a;
+  line-height: 1.07143;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  padding: 10px 5%;
+
+}
+
+
+.date-text {
+  font-style: italic;
+  font-size: 14px;
+  color: #999;
+  line-height: 16px;
+}
+
+.location-text {
+  font-style: italic;
+  font-size: 14px;
+  color: #999;
+  line-height: 16px;
+  float: right;
+
+}
+
+p {
+  font-size: 14px;
+  color: #192F43;
+  line-height: 21px;
+}
+
+a {
+  color: #1199c3;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.welcome-message {
+  font-style: italic;
+  font-size: 18px;
+  color: #f3f3f3;
+  line-height: 28px;
+}
+
+#skills-h3 {
+  display: none;
+}
+.blue {
+  background-color: #192F43;
+}
+
+.blue-text {
+  color: #192F43;
+}
+
+.light-blue-text {
+  font-weight: bold;
+  color: #1199c3;
+}
+
+.white-text {
+  font-weight: bold;
+  color: #fff;
+}
+
+.gray {
+  background-color: #fff;
+  padding-bottom: 10px;
+  clear: both;
+}
+
+.dark-gray {
+  background-color: #4a4a4a;
+}
+
+#header {
+  background-image: url("../images/headerBg.png");
+  background-repeat: round;
+  position: relative;
+  height: 100vh;
+}
+
+#headerContent{
+  position: absolute;
+  width: 90%;
+  text-align: center;
+  top: 35%;
+  transform: translateY(-35%);
+}
+
+.flex-box {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 10px;
+}
+
+.center-content {
+  padding: 2.5% 5%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.biopic {
+  margin: auto;
+  border-radius: 50%;
+  border: 4px white solid;
+  padding: 0px;
+  width: 30%;
+  display: none;
+}
+
+#workExperience{
+  display: flex;
+  flex-direction: column;
+}
+
+.work-entry{
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-entry{
+  display: block;
+}
+
+.education-entry{
+  padding: 5px 5%;
+}
+
+.education-info,
+.work-info,
+.project-info {
+  margin: auto;
+  text-align: center;
+}
+
+.work-image,
+.project-image{
+  display: block;
+  max-width: 400px;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.project-image{
+  max-width: 800px;
+  max-height: 800px;
+  margin: auto;
+}
+
+.fade-in{
+  opacity: 0;
+}
+
+#knowledge{
+  display: flex;
+  padding-top: 10vh;
+}
+
+#education{
+  width: 40%;
+}
+
+#skills{
+  width: 60%;
+  position: relative;
+}
+
+.skillCloud{
+  position: relative;
+}
+
+.skill-entry{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  border-radius: 50%;
+  background-color: #192F43;
+  color: #fff;
+  text-align: center;
+  transition: all .2s ease-in-out;
+}
+.skill-entry:hover{
+  transform: scale(1.5);
+  z-index: 2;
+}
+
+.skill-entry span{
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+
+
+img {
+  padding: 10px;
+}
+
+span {
+  padding: 5px;
+}
+
+#lets-connect {
+  text-align: center;
+}
+
+#footerContacts{
+  background-image: url('../images/footerBg.jpg');
+  background-repeat: round;
+}
+
+/* Media queries to handle various device widths */
+
+@media only screen and (max-width: 1024px) {
+  #lets-connect {
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width:900px) {
+  .biopic {
+    width: 175px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #lets-connect {
+    margin-top: 10%;
+  }
+  .biopic {
+    width: 150px;
+  }
+  .welcome-message {
+    display: none;
+  }
+}
+
+#map {
+  display: block;
+  height: 100%;
+  margin: 0 5%;
+}
+
+#mapDiv {
+  height: 400px;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+@media only screen and (min-width: 750px) {
+  #skills-h3,
+  .biopic {
+    display: block;
+  }
+}
