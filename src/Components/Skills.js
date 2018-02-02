@@ -5,7 +5,7 @@ class Skills extends Component {
 
   render() {
     let skillItems = [];
-    let w = 600;
+    let w = this.props.width * 0.6 - 150; //width of the container is 60%
     let h = 300;
     let cx = w/2;
     let cy = h/2;
@@ -14,8 +14,8 @@ class Skills extends Component {
     //Make objects appear in a circle
     for (var i = 0; i < this.props.skills.length; i++){
       angle = (i * 2 * Math.PI / (this.props.skills.length-1));
-      x = cx + 120 * Math.cos(angle);
-      y = cy + 120 * Math.sin(angle);
+      x = cx + 130 * Math.cos(angle);
+      y = cy + 130 * Math.sin(angle);
 
       //center the first object
       if (i === 0){

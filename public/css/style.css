@@ -195,6 +195,7 @@ ul {
 .project-info {
   margin: auto;
   text-align: center;
+  padding: 0 5%;
 }
 
 .work-image,
@@ -233,6 +234,7 @@ ul {
 
 .skillCloud{
   position: relative;
+  height: 500px;
 }
 
 .skill-entry{
@@ -264,7 +266,7 @@ img {
 }
 
 span {
-  padding: 5px;
+  padding: 10px;
 }
 
 #lets-connect {
