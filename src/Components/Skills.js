@@ -8,7 +8,7 @@ class Skills extends Component {
     let w = this.props.width * 0.6 - 150; //width of the container is 60%
     let r = 130;
     if(this.props.width < 750){
-      w = this.props.width - r;
+      w = this.props.width - 150;
     }
 
     let h = 300;

@@ -226,6 +226,7 @@ ul {
 #knowledge{
   display: flex;
   padding-top: 10vh;
+  width: 100%;
 }
 
 #education{
