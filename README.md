@@ -1,4 +1,4 @@
-#My Portfolio
+# My Portfolio
 
 I started this project as a part of the JavaScript course I took with Udacity. I then continued making the website more aesthetically pleasing and updated the layout and style to my liking.
 
