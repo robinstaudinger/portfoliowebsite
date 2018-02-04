@@ -27,38 +27,44 @@ var education = {
 		"location" : "Espoo, Finland",
 		"degree": "MS",
 		"major": "Robotics",
-		"dates" : "2017-"
+		"dates" : "2017-",
+		"link" : "http://www.aalto.fi"
 	},
 	{
 		"name" : "Pace University",
 		"location" : "New York, NY",
 		"degree": "Exchange studies",
 		"major": "Computer Science",
-		"dates" : 2017
+		"dates" : 2017,
+		"link" : "http://www.pace.edu"
 	},
 	{
 		"name" : "Aalto University",
 		"location" : "Espoo, Finland",
 		"degree": "BSc",
 		"major": "Automation and systems technology",
-		"dates" : "2014-2017"
+		"dates" : "2014-2017",
+		"link" : "http://www.aalto.fi"
 	}
 	],
 	"onlineClasses" : [
 	{
 		"title" : "JavaScript Basics",
 		"school" : "Udacity",
-		"dates" : 2017
+		"dates" : 2017,
+		"link" : "https://udacity.com"
 	},
 	{
 		"title" : "Android programming",
 		"school" : "Udacity",
-		"dates" : 2017
+		"dates" : 2017,
+		"link" : "https://udacity.com"
 	},
 	{
 		"title" : "Java Object Oriented Programming 1",
 		"school" : "University of Helsinki",
-		"dates" : 2016
+		"dates" : 2016,
+		"link" : "http://mooc.fi/"
 	}
 	]
 }
@@ -70,7 +76,8 @@ var work = {
 		"location" : "Espoo, Finland",
 		"dates" : "5/2017 - 8/2017",
 		"description" : "Web development on the Liferay portal platform, using HTML, CSS, JavaScript (jQuery and Alloy UI) and Java to create website portlets and themes.",
-		"image" : "images/csc.png"
+		"image" : "images/csc.png",
+		"link" : "https://www.csc.fi/"
 	},
 	{
 		"employer" : "Reuter-Stolt",
@@ -78,7 +85,8 @@ var work = {
 		"location" : "Espoo, Finland",
 		"dates" : "8/2016",
 		"description" : "Using my skills in HTML, CSS and Wordpress I created a functioning and aesthetically pleasing website to fit the customer's needs.",
-		"image" : "images/reuter.png"
+		"image" : "images/reuter.png",
+		"link" : "http://reuter-stolt.fi/"
 	},
 	{
 		"employer" : "Self",
@@ -86,7 +94,8 @@ var work = {
 		"location" : "Espoo, Finland",
 		"dates" : "3/2012 - ",
 		"description" : "Selling apparel prints using the Spreadshirt platform. With over 8000 prints sold, I've been able to get a good financial support during my studies. My work has been designing prints for clothes, mainly using Adobe Illustrator, marketing them and running my own website.",
-		"image" : "images/spreadshirt.png"
+		"image" : "images/spreadshirt.png",
+		"link" : "https://www.spreadshirt.com"
 	}
 
 	]
@@ -119,6 +128,9 @@ var projects = {
 
 //append formatted data to page
 function format(place, HTMLvar, data){
+	if(arguments[3]){
+		HTMLvar = HTMLvar.replace(/\#/g, arguments[3])
+	}
 	$(place).append(HTMLvar.replace(/\%data%/g, data));
 }
 
@@ -153,16 +165,15 @@ function displayWork(){
 	//child div for the information
 	if(job % 2 === 0){
 		$(".work-entry:last").append(HTMLworkInfo);
-		var formattedImage = HTMLworkImage.replace("%data%", work.jobs[job].image);
-		$(".work-entry:last").append(formattedImage);
+		format(".work-entry:last", HTMLworkImage, work.jobs[job].image);
 	}else{
-		var formattedImage = HTMLworkImage.replace("%data%", work.jobs[job].image);
-		$(".work-entry:last").append(formattedImage);
+		format(".work-entry:last", HTMLworkImage, work.jobs[job].image);
 		$(".work-entry:last").append(HTMLworkInfo);
 	}
 
 	//add employer and title
 	var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+	formattedEmployer = formattedEmployer.replace("#", work.jobs[job].link);
 	if(work.jobs[job].title !== ""){
 		var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
 	}else{
@@ -189,24 +200,15 @@ function displayEducation(){
 	for (school in education.schools) {
 		//create div for education experience
 		$("#education").append(HTMLschoolStart);
-
 		//add Name and Degree
-		var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
-		var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
-		var formattedNameDegree = formattedName + formattedDegree;
-		$(".education-entry:last").append(formattedNameDegree);
-
+		format(".education-entry:last", HTMLschoolName, education.schools[school].name, education.schools[school].link);
+		format(".education-entry:last", HTMLschoolDegree, education.schools[school].degree);
 		//add dates
-		var formattedDates = HTMLschoolDates.replace("%data%", education.schools[school].dates);
-		$(".education-entry:last").append(formattedDates);
-
+		format(".education-entry:last", HTMLschoolDates, education.schools[school].dates);
 		//add location
-		var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
-		$(".education-entry:last").append(formattedLocation);
-
+		format(".education-entry:last", HTMLschoolLocation, education.schools[school].location);
 		//add major
-		var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[school].major);
-		$(".education-entry:last").append(formattedMajor);
+		format(".education-entry:last", HTMLschoolMajor, education.schools[school].major);
 	}
 }
 
@@ -216,7 +218,7 @@ function displayOnlineClasses(){
 	$("#education").append(HTMLonlineClasses);
 	for(var i = 0;i < education.onlineClasses.length ; i++){
 		$("#education").append(HTMLschoolStart);
-		format(".education-entry:last", HTMLonlineTitle, education.onlineClasses[i].title);
+		format(".education-entry:last", HTMLonlineTitle, education.onlineClasses[i].title, education.onlineClasses[i].link);
 		format(".education-entry:last", HTMLonlineSchool, education.onlineClasses[i].school);
 		format(".education-entry:last", HTMLonlineDates, education.onlineClasses[i].dates);
 	}
@@ -232,13 +234,13 @@ function locationizer(work_obj) {
 	return locations;
 }
 
-//internationalize name, Last name all upper
-function inName(name){
-	var name = name.trim().split(" ");
-	name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase();
-	name[1] = name[1].toUpperCase();
-	return name[0] + " " + name[1];
-}
+// //internationalize name, Last name all upper
+// function inName(name){
+// 	var name = name.trim().split(" ");
+// 	name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase();
+// 	name[1] = name[1].toUpperCase();
+// 	return name[0] + " " + name[1];
+// }
 
 displayWork();
 
