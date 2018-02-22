@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import Skills from './Components/Skills';
-
+/*
+The app class is the skeleton of the whole app, as the name implies.
+The function of the app is to read the dimensions of the app and set values
+for the skills.
+App calls for Skills giving it the list of skills and the width of the window.
+*/
 class App extends Component {
   constructor(){
     super();
@@ -25,6 +30,7 @@ updateWindowDimensions() {
   this.setState({ width: window.innerWidth, height: window.innerHeight });
 }
 
+//define the skillset
   componentWillMount(){
     this.setState({
     skills: [
@@ -38,6 +44,8 @@ updateWindowDimensions() {
     ]
     });
   }
+
+//what will actually show on the page
   render() {
     return (
       <div className="ReactApp">

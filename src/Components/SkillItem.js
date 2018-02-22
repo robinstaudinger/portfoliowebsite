@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-
+/*
+SkillItem returns the skill item with proper styling.
+*/
 class SkillItem extends Component {
   render() {
     return (

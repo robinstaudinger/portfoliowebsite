@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import SkillItem from './SkillItem';
-
+/*
+The skills class is the container for the skill items.
+In the class we define how the skill items will appear in the app.
+The skills are arranged in a circle with the first skill in the middle.
+Skills calls for SkillItem with the passing the props: key, skill and style.
+*/
 class Skills extends Component {
 
   render() {
