@@ -233,6 +233,10 @@ ul {
   width: 40%;
 }
 
+#education h1 {
+  padding-bottom: 50px;
+}
+
 #skills{
   width: 60%;
   position: relative;

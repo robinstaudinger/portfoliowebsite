@@ -19,7 +19,7 @@ class Education extends Component {
     for (var i = 0; i < this.props.education.schools.length; i++){
       schoolItems.push(<EducationItem key={this.props.education.schools[i]} school={this.props.education.schools[i]}/>);
     }
-    for (var i = 0; i < this.props.education.onlineClasses.length; i++){
+    for (i = 0; i < this.props.education.onlineClasses.length; i++){
       onlineItems.push(<EducationItem key={this.props.education.onlineClasses[i]} onlineClasses={this.props.education.onlineClasses[i]}/>);
     }
     return (

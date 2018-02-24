@@ -17,13 +17,13 @@ class ProjectItem extends Component {
         <div class="dateText">{this.props.project.dates}</div>
         <p>{this.props.project.description}</p>
         </div>
-        <img class="projectImage" src={this.props.project.image}/>
+        <img class="projectImage" src={this.props.project.image} alt={this.props.project.title}/>
         </div>
       );
     }else{
       return (
         <div key={this.props.project} className={'projectEntry fadeIn'}>
-        <img class="projectImage" src={this.props.project.image}/>
+        <img class="projectImage" src={this.props.project.image} alt={this.props.project.title}/>
         <div class="projectInfo">
         <h2><a href={this.props.project.link} target="_blank">{this.props.project.title}</a></h2>
         <div class="dateText">{this.props.project.dates}</div>
