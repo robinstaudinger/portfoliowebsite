@@ -1,15 +1,18 @@
 /*
-The app class is the skeleton of the whole app, as the name implies.
-The function of the app is to read the dimensions of the app and set values
-for the skills.
-App calls for Skills giving it the list of skills and the width of the window.
+
+*** Author: Robin Staudinger ***
+
+The app class is the skeleton of the whole web app, as the name implies.
+The function of the app is to read the dimensions of the app and define
+objects.
+
 */
 
 import React, { Component } from 'react';
 import Work from './Components/Work';
-//import Projects from './Components/Projects';
+import Projects from './Components/Projects';
 import Skills from './Components/Skills';
-//import Education from './Components/Education';
+import Education from './Components/Education';
 
 class App extends Component {
   constructor(){
@@ -91,7 +94,7 @@ updateWindowDimensions() {
     	{
     		"name" : "Aalto University",
     		"location" : "Espoo, Finland",
-    		"degree": "MS",
+    		"degree": "MSc",
     		"major": "Robotics",
     		"dates" : "2017-",
     		"link" : "http://www.aalto.fi"
@@ -138,12 +141,17 @@ updateWindowDimensions() {
     });
   }
 
-//what will actually show on the page
+// what will actually show on the page - call different classes that will handle
+// the output to the ReactApp div.
   render() {
     return (
       <div className="ReactApp">
-      <Work work={this.state.work}/>
-      <Skills skills={this.state.skills} width = {this.state.width}/>
+        <Work work={this.state.work}/>
+        <Projects projects={this.state.projects} order={this.state.work.length}/>
+        <div class="fadeIn" id="knowledge">
+          <Skills skills={this.state.skills} width = {this.state.width}/>
+          <Education education={this.state.education}/>
+        </div>
       </div>
     );
   }

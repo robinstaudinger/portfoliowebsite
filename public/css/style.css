@@ -16,7 +16,7 @@ h6 {
   font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
-.clear-fix {
+.clearFix {
   overflow: auto;
 }
 
@@ -99,7 +99,7 @@ a {
   background-color: #192F43;
 }
 
-.blue-text {
+.blueText {
   color: #192F43;
 }
 
@@ -119,7 +119,7 @@ a {
   clear: both;
 }
 
-.dark-gray {
+.darkGray {
   background-color: #4a4a4a;
 }
 

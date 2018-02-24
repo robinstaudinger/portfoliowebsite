@@ -1,10 +1,9 @@
 /*
 *** Author: Robin Staudinger ***
 
-The skills class is the container for the skill items.
-In the class we define how the skill items will appear in the app.
-The skills are arranged in a circle with the first skill in the middle.
-Skills calls for SkillItem with the passing the props: key, skill and style.
+The Work class is the container for the work items.
+In the class we define how the work items will appear in the app.
+@props work - list of work objects
 */
 import React, { Component } from 'react';
 import WorkItem from './WorkItem';
