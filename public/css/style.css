@@ -60,14 +60,14 @@ h5 {
 }
 
 
-.date-text {
+.dateText {
   font-style: italic;
   font-size: 14px;
   color: #999;
   line-height: 16px;
 }
 
-.location-text {
+.locationText {
   font-style: italic;
   font-size: 14px;
   color: #999;
@@ -88,7 +88,7 @@ a {
   margin-top: 10px;
 }
 
-.welcome-message {
+.welcomeMessage {
   font-style: italic;
   font-size: 18px;
   color: #f3f3f3;
@@ -103,12 +103,12 @@ a {
   color: #192F43;
 }
 
-.light-blue-text {
+.lightBlueText {
   font-weight: bold;
   color: #1199c3;
 }
 
-.white-text {
+.whiteText {
   font-weight: bold;
   color: #fff;
 }
@@ -142,7 +142,7 @@ a {
   transform: translateY(-35%);
 }
 
-.flex-box {
+.flexBox {
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
@@ -151,14 +151,14 @@ a {
   padding: 10px;
 }
 
-.flex-column {
+.flexColumn {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   padding: 10px;
 }
 
-.center-content {
+.centerContent {
   padding: 2.5% 5%;
 }
 
@@ -177,34 +177,34 @@ ul {
 
 /* ----------- Body ----------- */
 
-#workExperience{
+#work{
   display: flex;
   flex-direction: column;
 }
 
-.work-entry{
+.workEntry{
   display: flex;
   justify-content: space-between;
 }
 
-.project-entry{
+.projectEntry{
   display: block;
 }
 
-.education-entry{
+.educationEntry{
   padding: 5px 5%;
 }
 
-.education-info,
-.work-info,
-.project-info {
+.educationInfo,
+.workInfo,
+.projectInfo {
   margin: auto;
   text-align: center;
   padding: 0 5%;
 }
 
-.work-image,
-.project-image{
+.workImage,
+.projectImage{
   display: block;
   max-width: 40%;
   height: auto;
@@ -212,14 +212,14 @@ ul {
   object-fit: contain;
 }
 
-.project-image{
+.projectImage{
   max-width: 800px;
   max-height: 800px;
   width: 60%;
   margin: auto;
 }
 
-.fade-in{
+.fadeIn{
   opacity: 0;
 }
 
@@ -243,7 +243,7 @@ ul {
   height: 500px;
 }
 
-.skill-entry{
+.skillEntry{
   position: absolute;
   width: 150px;
   height: 150px;
@@ -254,12 +254,12 @@ ul {
   text-align: center;
   transition: all .2s ease-in-out;
 }
-.skill-entry:hover{
+.skillEntry:hover{
   transform: scale(1.5);
   z-index: 2;
 }
 
-.skill-entry span{
+.skillEntry span{
   display: inline-block;
   vertical-align: middle;
   line-height: normal;
@@ -271,7 +271,7 @@ span {
 
 /* ----------- Footer ----------- */
 
-#lets-connect {
+#letsConnect {
   text-align: center;
 }
 
@@ -283,7 +283,7 @@ span {
 /* Media queries to handle various device widths */
 
 @media only screen and (max-width: 1024px) {
-  #lets-connect {
+  #letsConnect {
     margin-top: 5%;
   }
 }
@@ -295,13 +295,13 @@ span {
 }
 
 @media only screen and (max-width: 750px) {
-  #lets-connect {
+  #letsConnect {
     margin-top: 10%;
   }
   .biopic {
     width: 150px;
   }
-  .welcome-message {
+  .welcomeMessage {
     display: none;
   }
   h1 {
@@ -333,12 +333,12 @@ span {
   }
 
 
-  .date-text {
+  .dateText {
     font-size: 14px;
     line-height: 16px;
   }
 
-  .location-text {
+  .locationText {
     font-size: 14px;
     line-height: 16px;
 

@@ -281,7 +281,7 @@ $(document).ready(function() {
 	$(window).scroll( function(){
 
 		/* Check the location of each desired element */
-		$('.fade-in').each( function(i){
+		$('.fadeIn').each( function(i){
 
 			var middle_of_object = $(this).position().top + $(this).outerHeight()/2;
 			var bottom_of_window = $(window).scrollTop() + $(window).height();

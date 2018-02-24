@@ -45,7 +45,7 @@ class Skills extends Component {
       skillItems.push(<SkillItem key={this.props.skills[i]} skill={this.props.skills[i]} idStyle={idStyle}/>);
     }
     return (
-      <div className="Skills">
+      <div id="skills">
       <h1>Skills</h1>
       <div className="skillCloud">
       {skillItems}

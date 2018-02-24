@@ -5,7 +5,7 @@ SkillItem returns the skill item with proper styling.
 class SkillItem extends Component {
   render() {
     return (
-      <div key={this.props.skill} className={'skill-entry'} style={this.props.idStyle} >
+      <div key={this.props.skill} className={'skillEntry'} style={this.props.idStyle} >
       <strong><span>{this.props.skill}</span></strong>
       </div>
     );
