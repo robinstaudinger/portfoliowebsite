@@ -6,24 +6,51 @@ ProjectItem creates the structure for each project element.
 */
 import React, { Component } from 'react';
 
-class ProjectItem extends Component {
+export default class ProjectItem extends Component {
+  constructor(){
+    super();
+    //automatically crop some of the image on the edges of the screen
+    this.state = {imgLeft: {left: '-10%'}, imgRight: {right: '-10%'}};
+  }
+handleMouseOver(){
+  this.setState({
+    imgLeft:{
+    left: '-10%',
+    transition: 'all .4s ease-in',
+    transform: 'scale(1.3)'
+  },
+    imgRight:{
+    right: '-10%',
+    transition: 'all .4s ease-in',
+    transform: 'scale(1.3)'
+  }
+});
+}
+
+handleMouseOut(){
+  this.setState({
+    imgLeft:{left: '-10%', transition: 'all .4s ease-out'},
+    imgRight:{right: '-10%', transition: 'all .4s ease-out'}
+});
+}
 
   render() {
-    if (this.props.order % 2 === 1){ //image on the right for even numbers
+
+    if (this.props.order % 2 === 1){ //image on the left for even numbers
       return (
-        <div key={this.props.project} className={'projectEntry fadeIn'}>
+        <div key={this.props.project} className={'projectEntry fadeIn'} onMouseOver={this.handleMouseOver.bind(this)} onMouseOut={this.handleMouseOut.bind(this)}>
         <div class="projectInfo">
         <h2><a href={this.props.project.link} target="_blank">{this.props.project.title}</a></h2>
         <div class="dateText">{this.props.project.dates}</div>
         <p>{this.props.project.description}</p>
         </div>
-        <img class="projectImage" src={this.props.project.image} alt={this.props.project.title}/>
+        <img class="projectImage" src={this.props.project.image} alt={this.props.project.title} style={this.state.imgRight}/>
         </div>
       );
     }else{
       return (
-        <div key={this.props.project} className={'projectEntry fadeIn'}>
-        <img class="projectImage" src={this.props.project.image} alt={this.props.project.title}/>
+        <div key={this.props.project} className={'projectEntry fadeIn'} onMouseOver={this.handleMouseOver.bind(this)} onMouseOut={this.handleMouseOut.bind(this)}>
+        <img class="projectImage" src={this.props.project.image} alt={this.props.project.title} style={this.state.imgLeft}/>
         <div class="projectInfo">
         <h2><a href={this.props.project.link} target="_blank">{this.props.project.title}</a></h2>
         <div class="dateText">{this.props.project.dates}</div>
@@ -34,5 +61,3 @@ class ProjectItem extends Component {
     }
   }
 }
-
-export default ProjectItem;

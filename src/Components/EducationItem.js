@@ -9,7 +9,7 @@ EducationItem returns the education item with proper styling.
 
 import React, { Component } from 'react';
 
-class EducationItem extends Component {
+export default class EducationItem extends Component {
   render() {
     if (this.props.school){
       return (
@@ -31,5 +31,3 @@ class EducationItem extends Component {
     }
   }
 }
-
-export default EducationItem;

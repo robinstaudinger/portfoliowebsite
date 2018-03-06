@@ -9,7 +9,7 @@ SkillItem returns the skill item with proper styling.
 
 import React, { Component } from 'react';
 
-class SkillItem extends Component {
+export default class SkillItem extends Component {
   render() {
     return (
       <div key={this.props.skill} className={'skillEntry'} style={this.props.idStyle} >
@@ -18,5 +18,3 @@ class SkillItem extends Component {
     );
   }
 }
-
-export default SkillItem;

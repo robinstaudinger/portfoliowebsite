@@ -8,7 +8,7 @@ In the class we define how the work items will appear in the app.
 import React, { Component } from 'react';
 import WorkItem from './WorkItem';
 
-class Work extends Component {
+export default class Work extends Component {
 
   render() {
     let workItems = [];
@@ -23,5 +23,3 @@ class Work extends Component {
     );
   }
 }
-
-export default Work;

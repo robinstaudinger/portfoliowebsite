@@ -14,7 +14,7 @@ import Projects from './Components/Projects';
 import Skills from './Components/Skills';
 import Education from './Components/Education';
 
-class App extends Component {
+export default class App extends Component {
   constructor(){
     super();
     this.state = { width: 0, height: 0 };
@@ -47,7 +47,7 @@ updateWindowDimensions() {
       		"title" : "- Web Developer, Summer Trainee",
       		"location" : "Espoo, Finland",
       		"dates" : "5/2017 - 8/2017",
-      		"description" : "Web development on the Liferay portal platform, using HTML, CSS, JavaScript (jQuery and Alloy UI) and Java to create website portlets and themes.",
+      		"description" : "Web development on the Liferay portal platform, using HTML, CSS, JavaScript (jQuery and Alloy UI) and Java EE to create website portlets and themes.",
       		"image" : "images/csc.png",
       		"link" : "https://www.csc.fi/"
       	},
@@ -65,12 +65,19 @@ updateWindowDimensions() {
       		"title" : "",
       		"location" : "Espoo, Finland",
       		"dates" : "3/2012 - ",
-      		"description" : "Selling apparel prints using the Spreadshirt platform. With over 8000 prints sold, I've been able to get a good financial support during my studies. My work has been designing prints for clothes, mainly using Adobe Illustrator, marketing them and running my own website.",
+      		"description" : "Selling apparel prints using the Spreadshirt platform. With over 8000 prints sold, I've been able to get a good financial support during my studies. My work has been designing prints for clothes, marketing them and running my own website.",
       		"image" : "images/spreadshirt.png",
       		"link" : "https://www.spreadshirt.com"
       	}],
 
       	projects : [
+          {
+        		"title" : "Ring of Fire",
+        		"dates" : "3/2018 -",
+        		"description" : "I grouped up with a couple of friends to create a mobilephone game using React Native. The purpose behind the project is to keep up with the newest technologies and practice project working tools.",
+        		"image" : "images/RingOfFire.png",
+        		"link" : "#"
+        	},
       	{
       		"title" : "Casino Card game",
       		"dates" : "4/2017 - 5/2017",
@@ -156,5 +163,3 @@ updateWindowDimensions() {
     );
   }
 }
-
-export default App;

@@ -11,7 +11,7 @@ In the class we define how the education items will appear in the app.
 import React, { Component } from 'react';
 import EducationItem from './EducationItem';
 
-class Education extends Component {
+export default class Education extends Component {
 
   render() {
     let schoolItems = [];
@@ -32,5 +32,3 @@ class Education extends Component {
     );
   }
 }
-
-export default Education;

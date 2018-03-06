@@ -12,7 +12,7 @@ In the class we define how the project items will appear in the app.
 import React, { Component } from 'react';
 import ProjectItem from './ProjectItem';
 
-class Projects extends Component {
+export default class Projects extends Component {
 
   render() {
     let projectItems = [];
@@ -27,5 +27,3 @@ class Projects extends Component {
     );
   }
 }
-
-export default Projects;
