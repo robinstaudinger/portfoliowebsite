@@ -10,8 +10,12 @@ export default class ProjectItem extends Component {
   constructor(){
     super();
     //automatically crop some of the image on the edges of the screen
-    this.state = {imgLeft: {left: '-10%'}, imgRight: {right: '-10%'}};
+    this.state = {
+      imgLeft: {left: '-10%'},
+      imgRight: {right: '-10%'}
+    };
   }
+
 handleMouseOver(){
   this.setState({
     imgLeft:{
@@ -44,14 +48,18 @@ handleMouseOut(){
         <div class="dateText">{this.props.project.dates}</div>
         <p>{this.props.project.description}</p>
         </div>
-        <img class="projectImage" src={this.props.project.image} alt={this.props.project.title} style={this.state.imgRight}/>
+        <div class="imgContainer" id={this.props.project.image} style={this.state.imgRight}>
+        <img class="projectImage" src={this.props.project.image} alt={this.props.project.title} />
+        </div>
         </div>
       );
     }else{
       return (
         <div key={this.props.project} className={'projectEntry fadeIn'} onMouseOver={this.handleMouseOver.bind(this)} onMouseOut={this.handleMouseOut.bind(this)}>
-        <img class="projectImage" src={this.props.project.image} alt={this.props.project.title} style={this.state.imgLeft}/>
-        <div class="projectInfo">
+        <div class="imgContainer" id={this.props.project.image} style={this.state.imgLeft}>
+        <img class="projectImage" src={this.props.project.image} alt={this.props.project.title} />
+        </div>
+      <div class="projectInfo">
         <h2><a href={this.props.project.link} target="_blank">{this.props.project.title}</a></h2>
         <div class="dateText">{this.props.project.dates}</div>
         <p>{this.props.project.description}</p>
