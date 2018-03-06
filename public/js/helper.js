@@ -1,5 +1,5 @@
 /*
-Author: Robin Staudinger
+ *** Author: Robin Staudinger ***
 */
 
 
@@ -9,47 +9,47 @@ These are HTML strings.
 var HTMLheaderName = '<h1 id="name">%data%</h1><hr>'; //delete <hr> if role added
 var HTMLheaderRole = '<span>%data%</span><hr>';
 
-var HTMLcontactGeneric = '<li class="flex-item"><span class="blue-text">%contact%</span><span class="light-blue-text">%data%</span></li>';
-var HTMLmobile = '<li class="flex-item"><span class="blue-text">mobile</span><span class="light-blue-text">%data%</span></li>';
-var HTMLemail = '<li class="flex-item"><span class="blue-text">email</span><a href="mailto:%data%"><span class="light-blue-text">%data%</span></a></li>';
-var HTMLlinkedin = '<li class="flex-item"><a href="%data%"><img src="images/linkedin_icon.png"></a></li>';
-var HTMLgithub = '<li class="flex-item"><a href="%data%"><img src="images/github_icon.ico"></a></li>';
-var HTMLblog = '<li class="flex-item"><span class="blue-text">blog</span><span class="light-blue-text">%data%</span></li>';
-var HTMLlocation = '<li class="flex-item"><span class="blue-text">location</span><span class="light-blue-text">%data%</span></li>';
+var HTMLcontactGeneric = '<li class="flexItem"><span class="blueText">%contact%</span><span class="lightBlueText">%data%</span></li>';
+var HTMLmobile = '<li class="flexItem"><span class="blueText">mobile</span><span class="lightBlueText">%data%</span></li>';
+var HTMLemail = '<li class="flexItem"><span class="blueText">email</span><a href="mailto:%data%"><span class="lightBlueText">%data%</span></a></li>';
+var HTMLlinkedin = '<li class="flexItem"><a href="%data%"><img src="images/linkedin_icon.png"></a></li>';
+var HTMLgithub = '<li class="flexItem"><a href="%data%"><img src="images/github_icon.ico"></a></li>';
+var HTMLblog = '<li class="flexItem"><span class="blueText">blog</span><span class="lightBlueText">%data%</span></li>';
+var HTMLlocation = '<li class="flexItem"><span class="blueText">location</span><span class="lightBlueText">%data%</span></li>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic">';
-var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
+var HTMLwelcomeMsg = '<span class="welcomeMessage">%data%</span>';
 
-var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skillsPreview" class="flex-box"></ul>';
-var HTMLskills = '<li class="flex-item"><span class="light-blue-text">%data%</span></li>';
+var HTMLskillsStart = '<h3 id="skillsH3">Skills at a Glance:</h3><ul id="skillsPreview" class="flexBox"></ul>';
+var HTMLskills = '<li class="flexItem"><span class="lightBlueText">%data%</span></li>';
 
 var HTMLworkStart = '<div class="work-entry fade-in"></div>';
 var HTMLworkInfo = '<div class="work-info"></div>';
 var HTMLworkEmployer = '<h2><a href="#" target="_blank">%data%';
 var HTMLworkTitle = ' - %data%</a></h2>';
-var HTMLworkDates = '<div class="date-text">%data%</div>';
-var HTMLworkLocation = '<div class="location-text">%data%</div>';
+var HTMLworkDates = '<div class="dateText">%data%</div>';
+var HTMLworkLocation = '<div class="locationText">%data%</div>';
 var HTMLworkDescription = '<p>%data%</p>';
 var HTMLworkImage = '<img class="work-image" src="%data%">';
 
 var HTMLprojectStart = '<div class="project-entry fade-in"></div>';
 var HTMLprojectInfo = '<div class="project-info"></div>';
 var HTMLprojectTitle = '<h2><a href="#" target="_blank">%data%</a></h2>';
-var HTMLprojectDates = '<div class="date-text">%data%</div>';
+var HTMLprojectDates = '<div class="dateText">%data%</div>';
 var HTMLprojectDescription = '<p>%data%</p>';
 var HTMLprojectImage = '<img class="project-image" src="%data%">';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<a href="#" target="_blank">%data%';
 var HTMLschoolDegree = ' -- %data%</a>';
-var HTMLschoolDates = '<div class="date-text">%data%</div>';
-var HTMLschoolLocation = '<div class="location-text">%data%</div>';
+var HTMLschoolDates = '<div class="dateText">%data%</div>';
+var HTMLschoolLocation = '<div class="locationText">%data%</div>';
 var HTMLschoolMajor = '<em>Major: %data%</em>';
 
 var HTMLonlineClasses = '<h3>Online Classes</h3>';
 var HTMLonlineTitle = '<a href="#" target="_blank">%data%';
 var HTMLonlineSchool = ' - %data%</a>';
-var HTMLonlineDates = '<div class="date-text">%data%</div>';
+var HTMLonlineDates = '<div class="dateText">%data%</div>';
 var HTMLonlineURL = '<br><a href="#" target="_blank">%data%</a>';
 
 var internationalizeButton = '<button>Internationalize</button>';

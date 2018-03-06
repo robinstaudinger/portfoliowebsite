@@ -1,15 +1,20 @@
-import React, { Component } from 'react';
 /*
+
+*** Author: Robin Staudinger ***
+
 SkillItem returns the skill item with proper styling.
+@props skill - the skill object
+@props idstyle - the styling of the object
 */
-class SkillItem extends Component {
+
+import React, { Component } from 'react';
+
+export default class SkillItem extends Component {
   render() {
     return (
-      <div key={this.props.skill} className={'skill-entry'} style={this.props.idStyle} >
+      <div key={this.props.skill} className={'skillEntry'} style={this.props.idStyle} >
       <strong><span>{this.props.skill}</span></strong>
       </div>
     );
   }
 }
-
-export default SkillItem;
