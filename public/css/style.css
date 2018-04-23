@@ -236,6 +236,18 @@ ul {
   padding-bottom: 50px;
 }
 
+.gpa{
+  display: flex;
+}
+
+.gpa p{
+  flex: 1;
+}
+
+.progress{
+  flex: 10;
+}
+
 #skills{
   width: 60%;
   position: relative;
