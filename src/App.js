@@ -103,6 +103,8 @@ updateWindowDimensions() {
     		"location" : "Espoo, Finland",
     		"degree": "MSc",
     		"major": "Robotics",
+        "gpa": 4,
+        "maxGrade": 5,
     		"dates" : "2017-",
     		"link" : "http://www.aalto.fi"
     	},
@@ -111,6 +113,8 @@ updateWindowDimensions() {
     		"location" : "New York, NY",
     		"degree": "Exchange studies",
     		"major": "Computer Science",
+        "gpa": 3.8,
+        "maxGrade": 4,
     		"dates" : 2017,
     		"link" : "http://www.pace.edu"
     	},
@@ -119,6 +123,8 @@ updateWindowDimensions() {
     		"location" : "Espoo, Finland",
     		"degree": "BSc",
     		"major": "Automation and systems technology",
+        "gpa": 2.4,
+        "maxGrade": 5,
     		"dates" : "2014-2017",
     		"link" : "http://www.aalto.fi"
     	}

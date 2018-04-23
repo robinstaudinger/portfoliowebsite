@@ -16,7 +16,7 @@ export default class Skills extends Component {
       w = this.props.width - 150;
     }
 
-    let h = 300;
+    let h = 400;
     let cx = w/2;
     let cy = h/2;
     var x, y, angle, idStyle;
