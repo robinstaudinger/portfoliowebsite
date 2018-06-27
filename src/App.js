@@ -43,6 +43,15 @@ updateWindowDimensions() {
     this.setState({
 
       	 work: [{
+      		"employer" : "Vaisala Oyj",
+      		"title" : "- AI Specialist, Giant Leap Intern",
+      		"location" : "Vantaa, Finland",
+      		"dates" : "5/2018 - 8/2018",
+      		"description" : "",
+      		"image" : "images/vaisala.png",
+      		"link" : "https://www.vaisala.com/"
+      	},
+        {
       		"employer" : "CSC - IT Center for Science",
       		"title" : "- Web Developer, Summer Trainee",
       		"location" : "Espoo, Finland",
@@ -91,7 +100,7 @@ updateWindowDimensions() {
       "Robotics",
       "Artificial Intelligence",
       "Web Development",
-      "Management",
+      "Project Management",
       "Problem Solving",
       "Matlab"
     ],
