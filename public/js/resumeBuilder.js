@@ -2,11 +2,11 @@
 //JSONs
 var bio = {
 	"name" : "Robin Staudinger",
-	"role" : "",
-	"welcomeMessage" : ":)",
+	"role" : "AI Specialist",
+	"welcomeMessage" : "",
 	"biopic" : "images/portrait.jpeg",
 	"contacts" : {
-		"mobile" : "(+358)400345398",
+		"mobile" : "",
 		"email" : "robin.staudinger@hotmail.com",
 		"github" : "https://github.com/robinstaudinger",
 		"linkedin": "https://www.linkedin.com/in/robin-staudinger/",
@@ -14,8 +14,8 @@ var bio = {
 	},
 	"skills" : [
 	"Python",
-	"Java",
-	"JavaScript",
+	"Artificial Intelligence",
+	"Project Management",
 	"Problem solving"
 	]
 }
@@ -45,7 +45,7 @@ var education = {
 		"location" : "Espoo, Finland",
 		"degree": "BSc",
 		"major": "Automation and systems technology",
-		"dates" : "2014-2017",
+		"dates" : "2014-2018",
 		"link" : "http://www.aalto.fi"
 	}
 	],
@@ -138,7 +138,7 @@ function format(place, HTMLvar, data){
 
 format("#footerContacts",HTMLlinkedin, bio.contacts.linkedin);
 format("#footerContacts", HTMLgithub, bio.contacts.github);
-format("#topContacts", HTMLmobile, bio.contacts.mobile);
+//format("#topContacts", HTMLmobile, bio.contacts.mobile);
 format("#topContacts", HTMLemail, bio.contacts.email);
 format("#topContacts", HTMLlocation, bio.contacts.location);
 format("#headerContent", HTMLbioPic, bio.biopic);

@@ -40,7 +40,7 @@ handleMouseOut(){
 
   render() {
 
-    if (this.props.order % 2 === 1){ //image on the left for even numbers
+    if (this.props.order % 2 === 0){ //image on the right for even numbers
       return (
         <div key={this.props.project} className={'projectEntry fadeIn'} onMouseOver={this.handleMouseOver.bind(this)} onMouseOut={this.handleMouseOut.bind(this)}>
         <div class="projectInfo">
