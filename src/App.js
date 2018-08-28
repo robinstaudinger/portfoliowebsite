@@ -44,10 +44,10 @@ updateWindowDimensions() {
 
       	 work: [{
       		"employer" : "Vaisala Oyj",
-      		"title" : "- AI Specialist, Giant Leap Intern",
+      		"title" : "- AI Integration, Giant Leap Intern",
       		"location" : "Vantaa, Finland",
       		"dates" : "5/2018 - 8/2018",
-      		"description" : "",
+      		"description" : "In my project, I had to transfer my academic knowledge of artificial intelligence and machine learning to apply them in the business world. My main task was to find use cases for AI in Vaisala processes, in doing so, I had to make sure that the employees of Vaisala really understood the role and capabilities of AI. I then further proceeded with a couple of the use cases, assessing the viability based on the existing data as well as the ROI. Logically a part of the project was to assess the current state-of-the-art technologies available and their suitability to Vaisala, including some hands-on experience of IBM Watson and H2O.ai.",
       		"image" : "images/vaisala.png",
       		"link" : "https://www.vaisala.com/"
       	},
@@ -73,7 +73,7 @@ updateWindowDimensions() {
       		"employer" : "Self",
       		"title" : "",
       		"location" : "Espoo, Finland",
-      		"dates" : "3/2012 - ",
+      		"dates" : "3/2012 - 3/2017",
       		"description" : "Selling apparel prints using the Spreadshirt platform. With over 8000 prints sold, I've been able to get a good financial support during my studies. My work has been designing prints for clothes, marketing them and running my own website.",
       		"image" : "images/spreadshirt.png",
       		"link" : "https://www.spreadshirt.com"
@@ -111,7 +111,7 @@ updateWindowDimensions() {
     		"name" : "Aalto University",
     		"location" : "Espoo, Finland",
     		"degree": "MSc",
-    		"major": "Robotics",
+    		"major": "Translational Engineering",
         "gpa": 4,
         "maxGrade": 5,
     		"dates" : "2017-",
