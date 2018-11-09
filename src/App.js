@@ -102,7 +102,7 @@ updateWindowDimensions() {
       "Web Development",
       "Project Management",
       "Problem Solving",
-      "Matlab"
+      "Data Science"
     ],
 
       education: {
@@ -112,7 +112,7 @@ updateWindowDimensions() {
     		"location" : "Espoo, Finland",
     		"degree": "MSc",
     		"major": "Translational Engineering",
-        "gpa": 4,
+        "gpa": 3.5,
         "maxGrade": 5,
     		"dates" : "2017-",
     		"link" : "http://www.aalto.fi"

@@ -2,14 +2,14 @@
 //JSONs
 var bio = {
 	"name" : "Robin Staudinger",
-	"role" : "AI Specialist",
+	"role" : "AI Expert",
 	"welcomeMessage" : "",
 	"biopic" : "images/portrait.jpeg",
 	"contacts" : {
-		"mobile" : "",
 		"email" : "robin.staudinger@hotmail.com",
 		"github" : "https://github.com/robinstaudinger",
 		"linkedin": "https://www.linkedin.com/in/robin-staudinger/",
+		"kaggle" : "https://www.kaggle.com/robinstaudinger",
 		"location" : "Espoo, Finland"
 	},
 	"skills" : [
@@ -19,114 +19,6 @@ var bio = {
 	"Problem solving"
 	]
 }
-
-//The React app handles this
-
-var education = {
-	"schools" : [
-	{
-		"name" : "Aalto University",
-		"location" : "Espoo, Finland",
-		"degree": "MS",
-		"major": "Robotics",
-		"dates" : "2017-",
-		"link" : "http://www.aalto.fi"
-	},
-	{
-		"name" : "Pace University",
-		"location" : "New York, NY",
-		"degree": "Exchange studies",
-		"major": "Computer Science",
-		"dates" : 2017,
-		"link" : "http://www.pace.edu"
-	},
-	{
-		"name" : "Aalto University",
-		"location" : "Espoo, Finland",
-		"degree": "BSc",
-		"major": "Automation and systems technology",
-		"dates" : "2014-2018",
-		"link" : "http://www.aalto.fi"
-	}
-	],
-	"onlineClasses" : [
-	{
-		"title" : "JavaScript Basics",
-		"school" : "Udacity",
-		"dates" : 2017,
-		"link" : "https://udacity.com"
-	},
-	{
-		"title" : "Android programming",
-		"school" : "Udacity",
-		"dates" : 2017,
-		"link" : "https://udacity.com"
-	},
-	{
-		"title" : "Java Object Oriented Programming 1",
-		"school" : "University of Helsinki",
-		"dates" : 2016,
-		"link" : "http://mooc.fi/"
-	}
-	]
-}
-
-var work = {
-	"jobs" : [{
-		"employer" : "CSC - IT Center for Science",
-		"title" : "Web Developer, Summer Trainee",
-		"location" : "Espoo, Finland",
-		"dates" : "5/2017 - 8/2017",
-		"description" : "Web development on the Liferay portal platform, using HTML, CSS, JavaScript (jQuery and Alloy UI) and Java to create website portlets and themes.",
-		"image" : "images/csc.png",
-		"link" : "https://www.csc.fi/"
-	},
-	{
-		"employer" : "Reuter-Stolt",
-		"title" : "Web Developer",
-		"location" : "Espoo, Finland",
-		"dates" : "8/2016",
-		"description" : "Using my skills in HTML, CSS and Wordpress I created a functioning and aesthetically pleasing website to fit the customer's needs.",
-		"image" : "images/reuter.png",
-		"link" : "http://reuter-stolt.fi/"
-	},
-	{
-		"employer" : "Self",
-		"title" : "",
-		"location" : "Espoo, Finland",
-		"dates" : "3/2012 - ",
-		"description" : "Selling apparel prints using the Spreadshirt platform. With over 8000 prints sold, I've been able to get a good financial support during my studies. My work has been designing prints for clothes, mainly using Adobe Illustrator, marketing them and running my own website.",
-		"image" : "images/spreadshirt.png",
-		"link" : "https://www.spreadshirt.com"
-	}
-
-	]
-}
-//
-// var projects = {
-// 	"projects" : [
-// 	{
-// 		"title" : "Casino Card game",
-// 		"dates" : "4/2017 - 5/2017",
-// 		"description" : "Command line operated card game played against NPCs or other players. The game is coded in Python.",
-// 		"image" : "images/casino.png",
-// 		"link" : "https://github.com/robinstaudinger/Casino_Card_Game"
-// 	}]
-// }
-//
-
-
-
-// var skills = {
-// 	"skill" : [
-// 		"Software Development",
-//       "Robotics",
-//       "Artificial Intelligence",
-//       "Web Development",
-//       "Management",
-// 			"Problem Solving"
-// 	]
-// }
 
 //append formatted data to page
 function format(place, HTMLvar, data){
@@ -138,6 +30,7 @@ function format(place, HTMLvar, data){
 
 format("#footerContacts",HTMLlinkedin, bio.contacts.linkedin);
 format("#footerContacts", HTMLgithub, bio.contacts.github);
+format("#footerContacts", HTMLkaggle, bio.contacts.kaggle);
 //format("#topContacts", HTMLmobile, bio.contacts.mobile);
 format("#topContacts", HTMLemail, bio.contacts.email);
 format("#topContacts", HTMLlocation, bio.contacts.location);

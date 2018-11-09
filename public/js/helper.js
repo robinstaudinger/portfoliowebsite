@@ -6,14 +6,14 @@
 /*
 These are HTML strings.
 */
-var HTMLheaderName = '<h1 id="name">%data%</h1><hr>'; //delete <hr> if role added
+var HTMLheaderName = '<h1 id="name">%data%</h1>'; //delete <hr> if role added
 var HTMLheaderRole = '<span>%data%</span><hr>';
 
 var HTMLcontactGeneric = '<li class="flexItem"><span class="blueText">%contact%</span><span class="lightBlueText">%data%</span></li>';
-var HTMLmobile = '<li class="flexItem"><span class="blueText">mobile</span><span class="lightBlueText">%data%</span></li>';
 var HTMLemail = '<li class="flexItem"><span class="blueText">email</span><a href="mailto:%data%"><span class="lightBlueText">%data%</span></a></li>';
 var HTMLlinkedin = '<li class="flexItem"><a href="%data%"><img src="images/linkedin_icon.png"></a></li>';
 var HTMLgithub = '<li class="flexItem"><a href="%data%"><img src="images/github_icon.ico"></a></li>';
+var HTMLkaggle = '<li class="flexItem"><a href="%data%"><img src="images/kaggle.png"></a></li>';
 var HTMLblog = '<li class="flexItem"><span class="blueText">blog</span><span class="lightBlueText">%data%</span></li>';
 var HTMLlocation = '<li class="flexItem"><span class="blueText">location</span><span class="lightBlueText">%data%</span></li>';
 
@@ -141,7 +141,7 @@ function initializeMap() {
     // the locations array. Note that forEach is used for array iteration
     // as described in the Udacity FEND Style Guide:
     // https://udacity.github.io/frontend-nanodegree-styleguide/javascript.html#for-in-loop
-    work.jobs.forEach(function(job){
+    work.forEach(function(job){
       locations.push(job.location);
     });
 
