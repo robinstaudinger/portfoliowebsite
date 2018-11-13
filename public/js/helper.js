@@ -141,7 +141,7 @@ function initializeMap() {
     // the locations array. Note that forEach is used for array iteration
     // as described in the Udacity FEND Style Guide:
     // https://udacity.github.io/frontend-nanodegree-styleguide/javascript.html#for-in-loop
-    work.forEach(function(job){
+    work.jobs.forEach(function(job){
       locations.push(job.location);
     });
 
@@ -164,7 +164,7 @@ function initializeMap() {
     // marker is an object with additional data about the pin for a single location
     var marker = new google.maps.Marker({
       map: map,
-      position: placeData.geometry.location,
+      position: placeData. .location,
       title: name
     });
 
