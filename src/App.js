@@ -81,11 +81,18 @@ updateWindowDimensions() {
 
       	projects : [
           {
-        		"title" : "Ring of Fire",
-        		"dates" : "3/2018 -",
-        		"description" : "I grouped up with a couple of friends to create a mobilephone game using React Native. The purpose behind the project is to keep up with the newest technologies and practice project working tools.",
-        		"image" : "images/RingOfFire.png",
+        		"title" : "Real Estate Investment Tool",
+        		"dates" : "12/2018 -",
+        		"description" : "Identify the best investment opportunities with the help of machine learning.",
+        		"image" : "",
         		"link" : "#"
+        	},
+          {
+        		"title" : "SAP0 - Junction 2018",
+        		"dates" : "11/2018",
+        		"description" : "A concept of creating a smoother customer experience using traditional phone calls. Implementation includes speech to text and natural language processing.",
+        		"image" : "images/SAP0.png",
+        		"link" : "https://github.com/robinstaudinger/Junction2018_winwinsolution"
         	},
       	{
       		"title" : "Casino Card game",
@@ -112,7 +119,7 @@ updateWindowDimensions() {
     		"location" : "Espoo, Finland",
     		"degree": "MSc",
     		"major": "Translational Engineering",
-        "gpa": 3.5,
+        "gpa": 3.69,
         "maxGrade": 5,
     		"dates" : "2017-",
     		"link" : "http://www.aalto.fi"
