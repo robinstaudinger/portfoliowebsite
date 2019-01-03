@@ -84,7 +84,7 @@ updateWindowDimensions() {
         		"title" : "Real Estate Investment Tool",
         		"dates" : "12/2018 -",
         		"description" : "Identify the best investment opportunities with the help of machine learning.",
-        		"image" : "",
+        		"image" : "images/real_estate.jpg",
         		"link" : "#"
         	},
           {
