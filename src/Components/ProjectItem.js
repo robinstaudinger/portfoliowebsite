@@ -47,6 +47,10 @@ handleMouseOut(){
         <h2><a href={this.props.project.link} target="_blank">{this.props.project.title}</a></h2>
         <div class="dateText">{this.props.project.dates}</div>
         <p>{this.props.project.description}</p>
+        <div class="skillsPracticed">
+          {this.props.project.skills.map((skill) => (
+            <p>{skill}</p>))}
+        </div>
         </div>
         <div class="imgContainer" id={this.props.project.image} style={this.state.imgRight}>
         <img class="projectImage" src={this.props.project.image} alt={this.props.project.title} />
@@ -63,6 +67,10 @@ handleMouseOut(){
         <h2><a href={this.props.project.link} target="_blank">{this.props.project.title}</a></h2>
         <div class="dateText">{this.props.project.dates}</div>
         <p>{this.props.project.description}</p>
+        <div class="skillsPracticed">
+          {this.props.project.skills.map((skill) => (
+            <p>{skill}</p>))}
+        </div>
         </div>
         </div>
       );
