@@ -21,12 +21,12 @@ handleMouseOver(){
     imgLeft:{
     left: '-10%',
     transition: 'all .4s ease-in',
-    transform: 'scale(1.3)'
+    transform: 'scale(1.2)'
   },
     imgRight:{
     right: '-10%',
     transition: 'all .4s ease-in',
-    transform: 'scale(1.3)'
+    transform: 'scale(1.2)'
   }
 });
 }
