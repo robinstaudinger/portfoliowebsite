@@ -58,7 +58,7 @@ updateWindowDimensions() {
       		"location" : "Espoo, Finland",
       		"dates" : "5/2017 - 8/2017",
       		"description" : "Web development on the Liferay portal platform, using HTML, CSS, JavaScript (jQuery and Alloy UI) and Java EE to create website portlets and themes.",
-          "skills" : ["Web Development", "Java", "JavaScript"],
+          "skills" : ["Web Development", "Full Stack" ,"Java", "JavaScript"],
           "image" : "images/csc.png",
       		"link" : "https://www.csc.fi/"
       	},
@@ -68,7 +68,7 @@ updateWindowDimensions() {
       		"location" : "Espoo, Finland",
       		"dates" : "8/2016",
       		"description" : "Using my skills in HTML, CSS and Wordpress I created a functioning and aesthetically pleasing website to fit the customer's needs.",
-          "skills" : ["Web Development", "Project Management"],
+          "skills" : ["Web Development", "Front-End", "Project Management"],
           "image" : "images/reuter.png",
       		"link" : "http://reuter-stolt.fi/"
       	},
@@ -88,7 +88,7 @@ updateWindowDimensions() {
         		"title" : "Real Estate Investment Tool",
         		"dates" : "12/2018 -",
         		"description" : "Identifies the best investment opportunities in the real estate market. Delivers high interest and cashflowing apartments, solely based on rental income.",
-            "skills" : ["Python","Web Scraping", "Big Data", "Project Management", "NoSQL"],
+            "skills" : ["Python","Full Stack", "Big Data", "Project Management", "NoSQL"],
             "image" : "images/real_estate.jpg",
         		"link" : "#"
         	},
