@@ -87,7 +87,7 @@ updateWindowDimensions() {
           {
         		"title" : "Real Estate Investment Tool",
         		"dates" : "12/2018 -",
-        		"description" : "Identifies the best investment opportunities in the real estate market. Delivers high interest and cashflowing apartments, solely based on rental income.",
+        		"description" : "Identifies the best investment opportunities in the real estate market. Delivers high return and cashflowing apartments.",
             "skills" : ["Python","Full Stack", "Big Data", "Project Management", "NoSQL"],
             "image" : "images/real_estate.jpg",
         		"link" : "#"
@@ -96,7 +96,7 @@ updateWindowDimensions() {
         		"title" : "SAP0 - Junction 2018",
         		"dates" : "11/2018",
         		"description" : "A concept of creating a smoother customer experience using traditional phone calls. Implementation includes speech to text and natural language processing.",
-            "skills" : ["Python", "Flask", "AI", "NLP", "ML", "Project Management", "Leadership"],
+            "skills" : ["Python", "Flask", "AI", "NLP", "ML", "Project Management"],
             "image" : "images/SAP0.png",
         		"link" : "https://github.com/robinstaudinger/Junction2018_winwinsolution"
         	},
