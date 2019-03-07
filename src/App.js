@@ -85,10 +85,10 @@ updateWindowDimensions() {
 
       	projects : [
           {
-        		"title" : "Real Estate Investment Tool",
+        		"title" : "Real Estate Investment Tool [Commercial]",
         		"dates" : "12/2018 -",
-        		"description" : "Identifies the best investment opportunities in the real estate market. Delivers high return and cashflowing apartments.",
-            "skills" : ["Python","Full Stack", "Big Data", "Project Management", "NoSQL"],
+        		"description" : "Full Stack pipeline from web crawling and data processing to a beautiful and functioning web site, including user control and payment service.",
+            "skills" : ["Python", "Flask", "Full Stack", "NoSQL", "Cloud", "Big Data", "Project Management"],
             "image" : "images/real_estate.jpg",
         		"link" : "#"
         	},
@@ -115,7 +115,7 @@ updateWindowDimensions() {
       "Artificial Intelligence",
       "Web Development",
       "Project Management",
-      "Problem Solving",
+      "Computer Vision",
       "Data Science"
     ],
 
