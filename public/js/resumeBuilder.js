@@ -16,7 +16,7 @@ var bio = {
 	"Python",
 	"Artificial Intelligence",
 	"Project Management",
-	"Problem solving"
+	"Full Stack Development"
 	]
 }
 

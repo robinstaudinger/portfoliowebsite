@@ -223,6 +223,22 @@ ul {
   opacity: 0;
 }
 
+.skillsPracticed{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillsPracticed > p {
+ margin: 5px;
+ padding: 5px;
+ border-radius: 10px;
+ text-align: center;
+ color: #fff;
+ background-color: #192F43;
+ vertical-align: middle;
+}
+
 #knowledge{
   display: flex;
   padding-top: 10vh;

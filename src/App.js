@@ -48,7 +48,8 @@ updateWindowDimensions() {
       		"location" : "Vantaa, Finland",
       		"dates" : "5/2018 - 8/2018",
       		"description" : "In my project, I had to transfer my academic knowledge of artificial intelligence and machine learning to apply them in the business world. My main task was to find use cases for AI in Vaisala processes, in doing so, I had to make sure that the employees of Vaisala really understood the role and capabilities of AI. I then further proceeded with a couple of the use cases, assessing the viability based on the existing data as well as the ROI. Logically a part of the project was to assess the current state-of-the-art technologies available and their suitability to Vaisala, including some hands-on experience of IBM Watson and H2O.ai.",
-      		"image" : "images/vaisala.png",
+          "skills" : ["AI", "Project Management", "ML", "AutoML", "Python", "Public Speaking", "Research"],
+          "image" : "images/vaisala.png",
       		"link" : "https://www.vaisala.com/"
       	},
         {
@@ -57,7 +58,8 @@ updateWindowDimensions() {
       		"location" : "Espoo, Finland",
       		"dates" : "5/2017 - 8/2017",
       		"description" : "Web development on the Liferay portal platform, using HTML, CSS, JavaScript (jQuery and Alloy UI) and Java EE to create website portlets and themes.",
-      		"image" : "images/csc.png",
+          "skills" : ["Web Development", "Full Stack" ,"Java", "JavaScript"],
+          "image" : "images/csc.png",
       		"link" : "https://www.csc.fi/"
       	},
       	{
@@ -66,7 +68,8 @@ updateWindowDimensions() {
       		"location" : "Espoo, Finland",
       		"dates" : "8/2016",
       		"description" : "Using my skills in HTML, CSS and Wordpress I created a functioning and aesthetically pleasing website to fit the customer's needs.",
-      		"image" : "images/reuter.png",
+          "skills" : ["Web Development", "Front-End", "Project Management"],
+          "image" : "images/reuter.png",
       		"link" : "http://reuter-stolt.fi/"
       	},
       	{
@@ -75,30 +78,34 @@ updateWindowDimensions() {
       		"location" : "Espoo, Finland",
       		"dates" : "3/2012 - 3/2017",
       		"description" : "Selling apparel prints using the Spreadshirt platform. With over 8000 prints sold, I've been able to get a good financial support during my studies. My work has been designing prints for clothes, marketing them and running my own website.",
-      		"image" : "images/spreadshirt.png",
+          "skills" : ["Digital Marketing", "Web Development", "Creativity"],
+          "image" : "images/spreadshirt.png",
       		"link" : "https://www.spreadshirt.com"
       	}],
 
       	projects : [
           {
-        		"title" : "Real Estate Investment Tool",
+        		"title" : "Real Estate Investment Tool [Commercial]",
         		"dates" : "12/2018 -",
-        		"description" : "Identify the best investment opportunities with the help of machine learning.",
-        		"image" : "",
+        		"description" : "Full Stack pipeline from web crawling and data processing to a beautiful and functioning web site, including user control and payment service.",
+            "skills" : ["Python", "Flask", "Full Stack", "NoSQL", "Cloud", "Big Data", "Project Management"],
+            "image" : "images/real_estate.jpg",
         		"link" : "#"
         	},
           {
         		"title" : "SAP0 - Junction 2018",
         		"dates" : "11/2018",
         		"description" : "A concept of creating a smoother customer experience using traditional phone calls. Implementation includes speech to text and natural language processing.",
-        		"image" : "images/SAP0.png",
+            "skills" : ["Python", "Flask", "AI", "NLP", "ML", "Project Management"],
+            "image" : "images/SAP0.png",
         		"link" : "https://github.com/robinstaudinger/Junction2018_winwinsolution"
         	},
       	{
       		"title" : "Casino Card game",
       		"dates" : "4/2017 - 5/2017",
       		"description" : "Command line operated card game played against NPCs or other players. The game is coded in Python.",
-      		"image" : "images/casino.png",
+          "skills" : ["Python", "Project Management"],
+          "image" : "images/casino.png",
       		"link" : "https://github.com/robinstaudinger/Casino_Card_Game"
       	}],
 
@@ -108,7 +115,7 @@ updateWindowDimensions() {
       "Artificial Intelligence",
       "Web Development",
       "Project Management",
-      "Problem Solving",
+      "Computer Vision",
       "Data Science"
     ],
 
@@ -119,7 +126,7 @@ updateWindowDimensions() {
     		"location" : "Espoo, Finland",
     		"degree": "MSc",
     		"major": "Translational Engineering",
-        "gpa": 3.69,
+        "gpa": 3.56,
         "maxGrade": 5,
     		"dates" : "2017-",
     		"link" : "http://www.aalto.fi"

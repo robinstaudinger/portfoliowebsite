@@ -41,6 +41,10 @@ export default class WorkItem extends Component {
             <h2><a href={this.props.work.link} target="_blank">{this.props.work.employer} {this.props.work.title}</a></h2>
             <div class="dateText">{this.props.work.dates}</div>
             <p>{this.props.work.description}</p>
+            <div class="skillsPracticed">
+              {this.props.work.skills.map((skill) => (
+                <p>{skill}</p>))}
+            </div>
           </div>
           <div class="imgContainer " id={this.props.work.image}>
             <img class="workImage" src={this.props.work.image} alt={this.props.work.title}/>
@@ -59,6 +63,10 @@ export default class WorkItem extends Component {
             <h2><a href={this.props.work.link} target="_blank">{this.props.work.employer} {this.props.work.title}</a></h2>
             <div class="dateText">{this.props.work.dates}</div>
             <p>{this.props.work.description}</p>
+            <div class="skillsPracticed">
+              {this.props.work.skills.map((skill) => (
+                <p>{skill}</p>))}
+            </div>
           </div>
         </div>
       );
